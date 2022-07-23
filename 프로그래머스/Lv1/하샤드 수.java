@@ -10,6 +10,7 @@ bool solution(int x) {
     while(harshad>0){
         sum += harshad % 10;
         harshad /= 10;
+        // 풀이  : 
     }
     if(x%sum == 0){
         return true;
