@@ -16,6 +16,8 @@ class Solution {
 		}
 	}
 	
+    // String형으로 변환 했던 배열 sort를 다시 long형으로 변환하여 return
 	return Long.parseLong(String.valueOf(sort));
+
     }
 }
