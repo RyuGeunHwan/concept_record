@@ -7,17 +7,16 @@ class Solution {
 // 선택 정렬 시작
 	int tmp = 0;
 	for(int i=0; i<sort.length; i++) {
-		for(int j=i+1; j<sort.length; j++) {
+		for(int j=i+1; j<sort.length; j++) {			
 			if(sort[i] < sort[j]) {
 				tmp = sort[i];
 				sort[i] = sort[j];
 				sort[j] = (char) tmp;
+				
 			}
 		}
 	}
-	
     // String형으로 변환 했던 배열 sort를 다시 long형으로 변환하여 return
 	return Long.parseLong(String.valueOf(sort));
-
     }
 }
