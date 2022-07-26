@@ -18,6 +18,7 @@
 // 이때 이 학생은 체육복을 하나만 도난당했다고 가정하며, 남은 체육복이 하나이기에 다른 학생에게는 체육복을 빌려줄 수 없습니다.
 
  class Solution {
+    
     public int solution(int n, int[] lost, int[] reserve) {
         int[] people = new int[n];
         int answer = n;
