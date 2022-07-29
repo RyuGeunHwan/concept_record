@@ -25,7 +25,23 @@ public class 모의고사 {
             int point = 0;
             for(int i=0; i<3; i++){
                 if(score[i] > point){
-                    // 중간까지 풀이 여기서 부터 다시 풀기
+                    point = score[i];
+                }
+            }
+            
+            //가장 높은점수를 받은 사람 구하기
+            int result = 0;
+            for(int i=0; i<3; i++){
+                if(score[i] == point){
+                    result++;
+                }
+            }
+            
+            answer = new int[result];
+            int idx = 0; 
+            for(int i=0; i<3; i++){
+                if(score[i] == point){
+                    answer[idx++] = i+1;
                 }
             }
             return answer;
